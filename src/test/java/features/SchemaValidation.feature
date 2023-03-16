@@ -1,3 +1,4 @@
+@test
 Feature: TEK Insurance API Schema Validation
 
   Scenario: 

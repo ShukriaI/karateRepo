@@ -1,7 +1,8 @@
+@test
 Feature: Token Generator Feature for TEK Insurance API
 
 
-  #@addCar
+  
   Scenario: Generate Token
     Given url "https://tek-insurance-api.azurewebsites.net"
     * path "/api/token"
