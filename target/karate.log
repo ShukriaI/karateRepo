@@ -378,3 +378,872 @@
 
 17:40:39.100 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:examples/users/users.feature
 17:40:40.147 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:26:31.463 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:26:33.442 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:26:34.243 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-insurance-api.azurewebsites.net/api/token
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 53
+1 > Host: tek-insurance-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 > Accept-Encoding: gzip,deflate
+{"username":"supervisor","password":"tek_supervisor"}
+
+18:26:35.014 [main] DEBUG com.intuit.karate - response time in milliseconds: 770
+1 < 200
+1 < Content-Type: application/json
+1 < Date: Thu, 16 Mar 2023 22:26:35 GMT
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+{"fullName":"Supervisor","username":"SUPERVISOR","token":"eyJraWQiOiJUZWtzY2hvb2wgSW5zdXJhbmNlIEFwcGxpY2F0aW9uIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJhdWQiOiJVc2VyIG1hbmFnZW1lbnQgcG9ydGFsIiwic3ViIjoiU1VQRVJWSVNPUiIsImlzcyI6IlRlayBJbnN1cmFuY2UgQXBwbGljYXRpb24iLCJBdXRob3JpdGllcyI6WyJBRE1JTiJdLCJleHAiOjE2NzkwOTE5OTUsImlhdCI6MTY3OTAwNTU5NX0.4kemEMVUBEkhrBKNiWKqSCUI7hFwjYQ_aInpeqfbRrtB0r6fs71eZ8rT7E6GlIY1LqDLzf8GC6KidzEr3yKjdw","generateDate":1679005595530,"accountType":"CSR"}
+
+18:26:35.024 [main] INFO  com.intuit.karate - [print] eyJraWQiOiJUZWtzY2hvb2wgSW5zdXJhbmNlIEFwcGxpY2F0aW9uIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJhdWQiOiJVc2VyIG1hbmFnZW1lbnQgcG9ydGFsIiwic3ViIjoiU1VQRVJWSVNPUiIsImlzcyI6IlRlayBJbnN1cmFuY2UgQXBwbGljYXRpb24iLCJBdXRob3JpdGllcyI6WyJBRE1JTiJdLCJleHAiOjE2NzkwOTE5OTUsImlhdCI6MTY3OTAwNTU5NX0.4kemEMVUBEkhrBKNiWKqSCUI7hFwjYQ_aInpeqfbRrtB0r6fs71eZ8rT7E6GlIY1LqDLzf8GC6KidzEr3yKjdw 
+18:26:35.027 [main] INFO  com.intuit.karate - [print] Supervisor 
+18:26:35.045 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read("PostAccount.feature")
+18:26:35.078 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-insurance-api.azurewebsites.net/api/token
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 53
+1 > Host: tek-insurance-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 > Accept-Encoding: gzip,deflate
+{"username":"supervisor","password":"tek_supervisor"}
+
+18:26:35.541 [main] DEBUG com.intuit.karate - response time in milliseconds: 462
+1 < 200
+1 < Content-Type: application/json
+1 < Date: Thu, 16 Mar 2023 22:26:35 GMT
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+{"fullName":"Supervisor","username":"SUPERVISOR","token":"eyJraWQiOiJUZWtzY2hvb2wgSW5zdXJhbmNlIEFwcGxpY2F0aW9uIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJhdWQiOiJVc2VyIG1hbmFnZW1lbnQgcG9ydGFsIiwic3ViIjoiU1VQRVJWSVNPUiIsImlzcyI6IlRlayBJbnN1cmFuY2UgQXBwbGljYXRpb24iLCJBdXRob3JpdGllcyI6WyJBRE1JTiJdLCJleHAiOjE2NzkwOTE5OTYsImlhdCI6MTY3OTAwNTU5Nn0.HJMDm3sR9E0ZzrK5EJWLUIcU5qgjJH5CmyYFY8s_QLLhOS1Z28_WI7WgF3ppzOc7lLmjL9p9cTsRVy9VRGQMmw","generateDate":1679005596073,"accountType":"CSR"}
+
+18:26:35.543 [main] INFO  com.intuit.karate - [print] eyJraWQiOiJUZWtzY2hvb2wgSW5zdXJhbmNlIEFwcGxpY2F0aW9uIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJhdWQiOiJVc2VyIG1hbmFnZW1lbnQgcG9ydGFsIiwic3ViIjoiU1VQRVJWSVNPUiIsImlzcyI6IlRlayBJbnN1cmFuY2UgQXBwbGljYXRpb24iLCJBdXRob3JpdGllcyI6WyJBRE1JTiJdLCJleHAiOjE2NzkwOTE5OTYsImlhdCI6MTY3OTAwNTU5Nn0.HJMDm3sR9E0ZzrK5EJWLUIcU5qgjJH5CmyYFY8s_QLLhOS1Z28_WI7WgF3ppzOc7lLmjL9p9cTsRVy9VRGQMmw 
+18:26:35.544 [main] INFO  com.intuit.karate - [print] Supervisor 
+18:26:35.970 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-insurance-api.azurewebsites.net/api/accounts/add-primary-account
+1 > Authorization: Bearer eyJraWQiOiJUZWtzY2hvb2wgSW5zdXJhbmNlIEFwcGxpY2F0aW9uIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJhdWQiOiJVc2VyIG1hbmFnZW1lbnQgcG9ydGFsIiwic3ViIjoiU1VQRVJWSVNPUiIsImlzcyI6IlRlayBJbnN1cmFuY2UgQXBwbGljYXRpb24iLCJBdXRob3JpdGllcyI6WyJBRE1JTiJdLCJleHAiOjE2NzkwOTE5OTYsImlhdCI6MTY3OTAwNTU5Nn0.HJMDm3sR9E0ZzrK5EJWLUIcU5qgjJH5CmyYFY8s_QLLhOS1Z28_WI7WgF3ppzOc7lLmjL9p9cTsRVy9VRGQMmw
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 208
+1 > Host: tek-insurance-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 > Accept-Encoding: gzip,deflate
+{"email":"BertramProhaska@tekschool.us","firstName":"Brittney","lastName":"Murphy","title":"MISS","gender":"MALE","maritalStatus":"SINGLE","employmentStatus":"Assistant","dateOfBirth":"2001-07-10","new":true}
+
+18:26:36.422 [main] DEBUG com.intuit.karate - response time in milliseconds: 448
+1 < 201
+1 < Content-Type: application/json
+1 < Date: Thu, 16 Mar 2023 22:26:36 GMT
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=D447CF2948711DB0F9393E2CC913068F; Path=/; Secure; HttpOnly
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+{"id":6095,"email":"BertramProhaska@tekschool.us","title":"MISS","firstName":"Brittney","lastName":"Murphy","gender":"MALE","maritalStatus":"SINGLE","employmentStatus":"Assistant","dateOfBirth":994723200000,"user":null}
+
+18:26:36.426 [main] INFO  com.intuit.karate - [print] {
+  "id": 6095,
+  "email": "BertramProhaska@tekschool.us",
+  "title": "MISS",
+  "firstName": "Brittney",
+  "lastName": "Murphy",
+  "gender": "MALE",
+  "maritalStatus": "SINGLE",
+  "employmentStatus": "Assistant",
+  "dateOfBirth": 994723200000,
+  "user": null
+}
+ 
+18:26:36.428 [main] INFO  com.intuit.karate - << lock released, cached callonce: read("PostAccount.feature")
+18:26:36.569 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-insurance-api.azurewebsites.net/api/accounts/add-account-address?primaryPersonId=6095
+1 > Authorization: Bearer eyJraWQiOiJUZWtzY2hvb2wgSW5zdXJhbmNlIEFwcGxpY2F0aW9uIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJhdWQiOiJVc2VyIG1hbmFnZW1lbnQgcG9ydGFsIiwic3ViIjoiU1VQRVJWSVNPUiIsImlzcyI6IlRlayBJbnN1cmFuY2UgQXBwbGljYXRpb24iLCJBdXRob3JpdGllcyI6WyJBRE1JTiJdLCJleHAiOjE2NzkwOTE5OTUsImlhdCI6MTY3OTAwNTU5NX0.4kemEMVUBEkhrBKNiWKqSCUI7hFwjYQ_aInpeqfbRrtB0r6fs71eZ8rT7E6GlIY1LqDLzf8GC6KidzEr3yKjdw
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 141
+1 > Host: tek-insurance-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 > Accept-Encoding: gzip,deflate
+{"addressType":"APPARTMENT","addressLine1":"10734","city":"Rolfsonton","state":"Utah","postalCode":"59616","countryCode":"CX","current":true}
+
+18:26:37.136 [main] DEBUG com.intuit.karate - response time in milliseconds: 567
+1 < 201
+1 < Content-Type: application/json
+1 < Date: Thu, 16 Mar 2023 22:26:36 GMT
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=CCD2FC3A2378BB28E27D467D8675D689; Path=/; Secure; HttpOnly
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+{"id":1856,"addressType":"APPARTMENT","addressLine1":"10734","city":"Rolfsonton","state":"Utah","postalCode":"59616","countryCode":"CX","current":true}
+
+18:26:37.138 [main] INFO  com.intuit.karate - [print] {
+  "id": 1856,
+  "addressType": "APPARTMENT",
+  "addressLine1": "10734",
+  "city": "Rolfsonton",
+  "state": "Utah",
+  "postalCode": "59616",
+  "countryCode": "CX",
+  "current": true
+}
+ 
+18:26:37.157 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:26:37.170 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-insurance-api.azurewebsites.net/api/token
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 53
+1 > Host: tek-insurance-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 > Accept-Encoding: gzip,deflate
+{"username":"supervisor","password":"tek_supervisor"}
+
+18:26:37.626 [main] DEBUG com.intuit.karate - response time in milliseconds: 455
+1 < 200
+1 < Content-Type: application/json
+1 < Date: Thu, 16 Mar 2023 22:26:38 GMT
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+{"fullName":"Supervisor","username":"SUPERVISOR","token":"eyJraWQiOiJUZWtzY2hvb2wgSW5zdXJhbmNlIEFwcGxpY2F0aW9uIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJhdWQiOiJVc2VyIG1hbmFnZW1lbnQgcG9ydGFsIiwic3ViIjoiU1VQRVJWSVNPUiIsImlzcyI6IlRlayBJbnN1cmFuY2UgQXBwbGljYXRpb24iLCJBdXRob3JpdGllcyI6WyJBRE1JTiJdLCJleHAiOjE2NzkwOTE5OTgsImlhdCI6MTY3OTAwNTU5OH0.hFoDpsmk4lSdcTILlQPk-IJD2tGSFx4I2u-amF1WEKQcCMghL1Bv0N5FkE8OrrKyUGt8f01562hiG7XSn9s2HA","generateDate":1679005598157,"accountType":"CSR"}
+
+18:26:37.629 [main] INFO  com.intuit.karate - [print] eyJraWQiOiJUZWtzY2hvb2wgSW5zdXJhbmNlIEFwcGxpY2F0aW9uIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJhdWQiOiJVc2VyIG1hbmFnZW1lbnQgcG9ydGFsIiwic3ViIjoiU1VQRVJWSVNPUiIsImlzcyI6IlRlayBJbnN1cmFuY2UgQXBwbGljYXRpb24iLCJBdXRob3JpdGllcyI6WyJBRE1JTiJdLCJleHAiOjE2NzkwOTE5OTgsImlhdCI6MTY3OTAwNTU5OH0.hFoDpsmk4lSdcTILlQPk-IJD2tGSFx4I2u-amF1WEKQcCMghL1Bv0N5FkE8OrrKyUGt8f01562hiG7XSn9s2HA 
+18:26:37.631 [main] INFO  com.intuit.karate - [print] Supervisor 
+18:26:37.657 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://tek-insurance-api.azurewebsites.net/api/accounts/update-account-address?primaryPersonId=6095
+1 > Authorization: Bearer eyJraWQiOiJUZWtzY2hvb2wgSW5zdXJhbmNlIEFwcGxpY2F0aW9uIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJhdWQiOiJVc2VyIG1hbmFnZW1lbnQgcG9ydGFsIiwic3ViIjoiU1VQRVJWSVNPUiIsImlzcyI6IlRlayBJbnN1cmFuY2UgQXBwbGljYXRpb24iLCJBdXRob3JpdGllcyI6WyJBRE1JTiJdLCJleHAiOjE2NzkwOTE5OTgsImlhdCI6MTY3OTAwNTU5OH0.hFoDpsmk4lSdcTILlQPk-IJD2tGSFx4I2u-amF1WEKQcCMghL1Bv0N5FkE8OrrKyUGt8f01562hiG7XSn9s2HA
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 144
+1 > Host: tek-insurance-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 > Accept-Encoding: gzip,deflate
+{"id":"1841","addressType":"HOME","addressLine1":"426","city":"Boylefurt","state":"Iowa","postalCode":"91838","countryCode":"KG","current":true}
+
+18:26:38.362 [main] DEBUG com.intuit.karate - response time in milliseconds: 705
+1 < 200
+1 < Content-Type: application/json
+1 < Date: Thu, 16 Mar 2023 22:26:38 GMT
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=B50020AB8DB27D325C4CC3A0A60D94E3; Path=/; Secure; HttpOnly
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+{"id":1841,"addressType":"HOME","addressLine1":"426","city":"Boylefurt","state":"Iowa","postalCode":"91838","countryCode":"KG","current":true}
+
+18:26:38.364 [main] INFO  com.intuit.karate - [print] {
+  "id": 1841,
+  "addressType": "HOME",
+  "addressLine1": "426",
+  "city": "Boylefurt",
+  "state": "Iowa",
+  "postalCode": "91838",
+  "countryCode": "KG",
+  "current": true
+}
+ 
+18:26:40.498 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:26:40.534 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-insurance-api.azurewebsites.net/api/token
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 53
+1 > Host: tek-insurance-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 > Accept-Encoding: gzip,deflate
+{"username":"supervisor","password":"tek_supervisor"}
+
+18:26:41.029 [main] DEBUG com.intuit.karate - response time in milliseconds: 494
+1 < 200
+1 < Content-Type: application/json
+1 < Date: Thu, 16 Mar 2023 22:26:41 GMT
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+{"fullName":"Supervisor","username":"SUPERVISOR","token":"eyJraWQiOiJUZWtzY2hvb2wgSW5zdXJhbmNlIEFwcGxpY2F0aW9uIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJhdWQiOiJVc2VyIG1hbmFnZW1lbnQgcG9ydGFsIiwic3ViIjoiU1VQRVJWSVNPUiIsImlzcyI6IlRlayBJbnN1cmFuY2UgQXBwbGljYXRpb24iLCJBdXRob3JpdGllcyI6WyJBRE1JTiJdLCJleHAiOjE2NzkwOTIwMDEsImlhdCI6MTY3OTAwNTYwMX0.U-9OcCFoBjIoQsJZw7KRa33DQ1xd51Upfj7TmLp_vnCMVw_gyVKYeHnuBmajmQ_f1wqAo1V_PLJxlZIznO6GQQ","generateDate":1679005601558,"accountType":"CSR"}
+
+18:26:41.032 [main] INFO  com.intuit.karate - [print] eyJraWQiOiJUZWtzY2hvb2wgSW5zdXJhbmNlIEFwcGxpY2F0aW9uIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJhdWQiOiJVc2VyIG1hbmFnZW1lbnQgcG9ydGFsIiwic3ViIjoiU1VQRVJWSVNPUiIsImlzcyI6IlRlayBJbnN1cmFuY2UgQXBwbGljYXRpb24iLCJBdXRob3JpdGllcyI6WyJBRE1JTiJdLCJleHAiOjE2NzkwOTIwMDEsImlhdCI6MTY3OTAwNTYwMX0.U-9OcCFoBjIoQsJZw7KRa33DQ1xd51Upfj7TmLp_vnCMVw_gyVKYeHnuBmajmQ_f1wqAo1V_PLJxlZIznO6GQQ 
+18:26:41.034 [main] INFO  com.intuit.karate - [print] Supervisor 
+18:26:41.039 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read("PostAccount.feature")
+18:26:41.052 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-insurance-api.azurewebsites.net/api/token
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 53
+1 > Host: tek-insurance-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 > Accept-Encoding: gzip,deflate
+{"username":"supervisor","password":"tek_supervisor"}
+
+18:26:41.490 [main] DEBUG com.intuit.karate - response time in milliseconds: 437
+1 < 200
+1 < Content-Type: application/json
+1 < Date: Thu, 16 Mar 2023 22:26:41 GMT
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+{"fullName":"Supervisor","username":"SUPERVISOR","token":"eyJraWQiOiJUZWtzY2hvb2wgSW5zdXJhbmNlIEFwcGxpY2F0aW9uIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJhdWQiOiJVc2VyIG1hbmFnZW1lbnQgcG9ydGFsIiwic3ViIjoiU1VQRVJWSVNPUiIsImlzcyI6IlRlayBJbnN1cmFuY2UgQXBwbGljYXRpb24iLCJBdXRob3JpdGllcyI6WyJBRE1JTiJdLCJleHAiOjE2NzkwOTIwMDIsImlhdCI6MTY3OTAwNTYwMn0.G2F6l6r_zgbjuSjh31dtrk4VwM0Ea7NVRGJDP0l-E-hX7UxVr_wacDyf_S96DMSGZFCntgLEmfBFVgt3KFUWYQ","generateDate":1679005602022,"accountType":"CSR"}
+
+18:26:41.491 [main] INFO  com.intuit.karate - [print] eyJraWQiOiJUZWtzY2hvb2wgSW5zdXJhbmNlIEFwcGxpY2F0aW9uIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJhdWQiOiJVc2VyIG1hbmFnZW1lbnQgcG9ydGFsIiwic3ViIjoiU1VQRVJWSVNPUiIsImlzcyI6IlRlayBJbnN1cmFuY2UgQXBwbGljYXRpb24iLCJBdXRob3JpdGllcyI6WyJBRE1JTiJdLCJleHAiOjE2NzkwOTIwMDIsImlhdCI6MTY3OTAwNTYwMn0.G2F6l6r_zgbjuSjh31dtrk4VwM0Ea7NVRGJDP0l-E-hX7UxVr_wacDyf_S96DMSGZFCntgLEmfBFVgt3KFUWYQ 
+18:26:41.491 [main] INFO  com.intuit.karate - [print] Supervisor 
+18:26:41.503 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-insurance-api.azurewebsites.net/api/accounts/add-primary-account
+1 > Authorization: Bearer eyJraWQiOiJUZWtzY2hvb2wgSW5zdXJhbmNlIEFwcGxpY2F0aW9uIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJhdWQiOiJVc2VyIG1hbmFnZW1lbnQgcG9ydGFsIiwic3ViIjoiU1VQRVJWSVNPUiIsImlzcyI6IlRlayBJbnN1cmFuY2UgQXBwbGljYXRpb24iLCJBdXRob3JpdGllcyI6WyJBRE1JTiJdLCJleHAiOjE2NzkwOTIwMDIsImlhdCI6MTY3OTAwNTYwMn0.G2F6l6r_zgbjuSjh31dtrk4VwM0Ea7NVRGJDP0l-E-hX7UxVr_wacDyf_S96DMSGZFCntgLEmfBFVgt3KFUWYQ
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 205
+1 > Host: tek-insurance-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 > Accept-Encoding: gzip,deflate
+{"email":"CarlosRoberts@tekschool.us","firstName":"Eddy","lastName":"Powlowski","title":"MRS.","gender":"MALE","maritalStatus":"SINGLE","employmentStatus":"Developer","dateOfBirth":"1971-02-25","new":true}
+
+18:26:41.911 [main] DEBUG com.intuit.karate - response time in milliseconds: 408
+1 < 201
+1 < Content-Type: application/json
+1 < Date: Thu, 16 Mar 2023 22:26:41 GMT
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=DE5B613AF5639E8DE838BE77DBF294AA; Path=/; Secure; HttpOnly
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+{"id":6096,"email":"CarlosRoberts@tekschool.us","title":"MRS.","firstName":"Eddy","lastName":"Powlowski","gender":"MALE","maritalStatus":"SINGLE","employmentStatus":"Developer","dateOfBirth":36288000000,"user":null}
+
+18:26:41.912 [main] INFO  com.intuit.karate - [print] {
+  "id": 6096,
+  "email": "CarlosRoberts@tekschool.us",
+  "title": "MRS.",
+  "firstName": "Eddy",
+  "lastName": "Powlowski",
+  "gender": "MALE",
+  "maritalStatus": "SINGLE",
+  "employmentStatus": "Developer",
+  "dateOfBirth": 36288000000,
+  "user": null
+}
+ 
+18:26:41.913 [main] INFO  com.intuit.karate - << lock released, cached callonce: read("PostAccount.feature")
+18:26:41.942 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-insurance-api.azurewebsites.net/api/accounts/add-account-car?primaryPersonId=6096
+1 > Authorization: Bearer eyJraWQiOiJUZWtzY2hvb2wgSW5zdXJhbmNlIEFwcGxpY2F0aW9uIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJhdWQiOiJVc2VyIG1hbmFnZW1lbnQgcG9ydGFsIiwic3ViIjoiU1VQRVJWSVNPUiIsImlzcyI6IlRlayBJbnN1cmFuY2UgQXBwbGljYXRpb24iLCJBdXRob3JpdGllcyI6WyJBRE1JTiJdLCJleHAiOjE2NzkwOTIwMDEsImlhdCI6MTY3OTAwNTYwMX0.U-9OcCFoBjIoQsJZw7KRa33DQ1xd51Upfj7TmLp_vnCMVw_gyVKYeHnuBmajmQ_f1wqAo1V_PLJxlZIznO6GQQ
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: tek-insurance-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 > Accept-Encoding: gzip,deflate
+{"id":100,"make":"Citroën","model":"Skoda","year":"1995","licensePlate":"onc-3802"}
+
+18:26:42.544 [main] DEBUG com.intuit.karate - response time in milliseconds: 601
+1 < 201
+1 < Content-Type: application/json
+1 < Date: Thu, 16 Mar 2023 22:26:43 GMT
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=83286639C2CBF119DD8AE90CC5810838; Path=/; Secure; HttpOnly
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+{"id":100,"make":"Citroën","model":"Skoda","year":"1995","licensePlate":"onc-3802"}
+
+18:26:42.546 [main] INFO  com.intuit.karate - [print] {
+  "id": 100,
+  "make": "Citroën",
+  "model": "Skoda",
+  "year": "1995",
+  "licensePlate": "onc-3802"
+}
+ 
+18:26:42.552 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:26:42.560 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-insurance-api.azurewebsites.net/api/token
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 53
+1 > Host: tek-insurance-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 > Accept-Encoding: gzip,deflate
+{"username":"supervisor","password":"tek_supervisor"}
+
+18:26:43.066 [main] DEBUG com.intuit.karate - response time in milliseconds: 506
+1 < 200
+1 < Content-Type: application/json
+1 < Date: Thu, 16 Mar 2023 22:26:43 GMT
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+{"fullName":"Supervisor","username":"SUPERVISOR","token":"eyJraWQiOiJUZWtzY2hvb2wgSW5zdXJhbmNlIEFwcGxpY2F0aW9uIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJhdWQiOiJVc2VyIG1hbmFnZW1lbnQgcG9ydGFsIiwic3ViIjoiU1VQRVJWSVNPUiIsImlzcyI6IlRlayBJbnN1cmFuY2UgQXBwbGljYXRpb24iLCJBdXRob3JpdGllcyI6WyJBRE1JTiJdLCJleHAiOjE2NzkwOTIwMDMsImlhdCI6MTY3OTAwNTYwM30.hCEqf0VtTxJdmQKhVAvn8DFI1iLndH74JDO024jwQbeqiX31bUnRqcOTSAz9cXRQHCUuWJYIBioQd1iB7OsfEw","generateDate":1679005603597,"accountType":"CSR"}
+
+18:26:43.068 [main] INFO  com.intuit.karate - [print] eyJraWQiOiJUZWtzY2hvb2wgSW5zdXJhbmNlIEFwcGxpY2F0aW9uIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJhdWQiOiJVc2VyIG1hbmFnZW1lbnQgcG9ydGFsIiwic3ViIjoiU1VQRVJWSVNPUiIsImlzcyI6IlRlayBJbnN1cmFuY2UgQXBwbGljYXRpb24iLCJBdXRob3JpdGllcyI6WyJBRE1JTiJdLCJleHAiOjE2NzkwOTIwMDMsImlhdCI6MTY3OTAwNTYwM30.hCEqf0VtTxJdmQKhVAvn8DFI1iLndH74JDO024jwQbeqiX31bUnRqcOTSAz9cXRQHCUuWJYIBioQd1iB7OsfEw 
+18:26:43.068 [main] INFO  com.intuit.karate - [print] Supervisor 
+18:26:43.092 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://tek-insurance-api.azurewebsites.net/api/accounts/update-account-car?primaryPersonId=6096
+1 > Authorization: Bearer eyJraWQiOiJUZWtzY2hvb2wgSW5zdXJhbmNlIEFwcGxpY2F0aW9uIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJhdWQiOiJVc2VyIG1hbmFnZW1lbnQgcG9ydGFsIiwic3ViIjoiU1VQRVJWSVNPUiIsImlzcyI6IlRlayBJbnN1cmFuY2UgQXBwbGljYXRpb24iLCJBdXRob3JpdGllcyI6WyJBRE1JTiJdLCJleHAiOjE2NzkwOTIwMDMsImlhdCI6MTY3OTAwNTYwM30.hCEqf0VtTxJdmQKhVAvn8DFI1iLndH74JDO024jwQbeqiX31bUnRqcOTSAz9cXRQHCUuWJYIBioQd1iB7OsfEw
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 91
+1 > Host: tek-insurance-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 > Accept-Encoding: gzip,deflate
+{"id":100,"make":"Tesla","model":"Citroën","year":"1980","licensePlate":"#(licensePlate)"}
+
+18:26:43.626 [main] DEBUG com.intuit.karate - response time in milliseconds: 534
+1 < 200
+1 < Content-Type: application/json
+1 < Date: Thu, 16 Mar 2023 22:26:44 GMT
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=2A6928297A0C89EF7CA217BACFE9C3A3; Path=/; Secure; HttpOnly
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+{"id":100,"make":"Tesla","model":"Citroën","year":"1980","licensePlate":"#(licensePlate)"}
+
+18:26:43.629 [main] INFO  com.intuit.karate - [print] {
+  "id": 100,
+  "make": "Tesla",
+  "model": "Citroën",
+  "year": "1980",
+  "licensePlate": "#(licensePlate)"
+}
+ 
+18:26:44.046 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:26:44.060 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-insurance-api.azurewebsites.net/api/token
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 53
+1 > Host: tek-insurance-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 > Accept-Encoding: gzip,deflate
+{"username":"supervisor","password":"tek_supervisor"}
+
+18:26:44.600 [main] DEBUG com.intuit.karate - response time in milliseconds: 539
+1 < 200
+1 < Content-Type: application/json
+1 < Date: Thu, 16 Mar 2023 22:26:44 GMT
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+{"fullName":"Supervisor","username":"SUPERVISOR","token":"eyJraWQiOiJUZWtzY2hvb2wgSW5zdXJhbmNlIEFwcGxpY2F0aW9uIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJhdWQiOiJVc2VyIG1hbmFnZW1lbnQgcG9ydGFsIiwic3ViIjoiU1VQRVJWSVNPUiIsImlzcyI6IlRlayBJbnN1cmFuY2UgQXBwbGljYXRpb24iLCJBdXRob3JpdGllcyI6WyJBRE1JTiJdLCJleHAiOjE2NzkwOTIwMDUsImlhdCI6MTY3OTAwNTYwNX0.QEu9I9nIa-6dvCJ2D97pZ0hlnQriz-y0DB6tK2Pp84MaEJCySjn48CDeppW6f_PYKESss9tbg0S3WY012RnIsw","generateDate":1679005605130,"accountType":"CSR"}
+
+18:26:44.602 [main] INFO  com.intuit.karate - [print] eyJraWQiOiJUZWtzY2hvb2wgSW5zdXJhbmNlIEFwcGxpY2F0aW9uIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJhdWQiOiJVc2VyIG1hbmFnZW1lbnQgcG9ydGFsIiwic3ViIjoiU1VQRVJWSVNPUiIsImlzcyI6IlRlayBJbnN1cmFuY2UgQXBwbGljYXRpb24iLCJBdXRob3JpdGllcyI6WyJBRE1JTiJdLCJleHAiOjE2NzkwOTIwMDUsImlhdCI6MTY3OTAwNTYwNX0.QEu9I9nIa-6dvCJ2D97pZ0hlnQriz-y0DB6tK2Pp84MaEJCySjn48CDeppW6f_PYKESss9tbg0S3WY012RnIsw 
+18:26:44.603 [main] INFO  com.intuit.karate - [print] Supervisor 
+18:26:44.618 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-insurance-api.azurewebsites.net/api/token
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 53
+1 > Host: tek-insurance-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 > Accept-Encoding: gzip,deflate
+{"username":"supervisor","password":"tek_supervisor"}
+
+18:26:45.048 [main] DEBUG com.intuit.karate - response time in milliseconds: 429
+1 < 200
+1 < Content-Type: application/json
+1 < Date: Thu, 16 Mar 2023 22:26:45 GMT
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+{"fullName":"Supervisor","username":"SUPERVISOR","token":"eyJraWQiOiJUZWtzY2hvb2wgSW5zdXJhbmNlIEFwcGxpY2F0aW9uIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJhdWQiOiJVc2VyIG1hbmFnZW1lbnQgcG9ydGFsIiwic3ViIjoiU1VQRVJWSVNPUiIsImlzcyI6IlRlayBJbnN1cmFuY2UgQXBwbGljYXRpb24iLCJBdXRob3JpdGllcyI6WyJBRE1JTiJdLCJleHAiOjE2NzkwOTIwMDUsImlhdCI6MTY3OTAwNTYwNX0.QEu9I9nIa-6dvCJ2D97pZ0hlnQriz-y0DB6tK2Pp84MaEJCySjn48CDeppW6f_PYKESss9tbg0S3WY012RnIsw","generateDate":1679005605580,"accountType":"CSR"}
+
+18:26:45.049 [main] INFO  com.intuit.karate - [print] eyJraWQiOiJUZWtzY2hvb2wgSW5zdXJhbmNlIEFwcGxpY2F0aW9uIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJhdWQiOiJVc2VyIG1hbmFnZW1lbnQgcG9ydGFsIiwic3ViIjoiU1VQRVJWSVNPUiIsImlzcyI6IlRlayBJbnN1cmFuY2UgQXBwbGljYXRpb24iLCJBdXRob3JpdGllcyI6WyJBRE1JTiJdLCJleHAiOjE2NzkwOTIwMDUsImlhdCI6MTY3OTAwNTYwNX0.QEu9I9nIa-6dvCJ2D97pZ0hlnQriz-y0DB6tK2Pp84MaEJCySjn48CDeppW6f_PYKESss9tbg0S3WY012RnIsw 
+18:26:45.050 [main] INFO  com.intuit.karate - [print] Supervisor 
+18:26:45.062 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-insurance-api.azurewebsites.net/api/accounts/add-primary-account
+1 > Authorization: Bearer eyJraWQiOiJUZWtzY2hvb2wgSW5zdXJhbmNlIEFwcGxpY2F0aW9uIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJhdWQiOiJVc2VyIG1hbmFnZW1lbnQgcG9ydGFsIiwic3ViIjoiU1VQRVJWSVNPUiIsImlzcyI6IlRlayBJbnN1cmFuY2UgQXBwbGljYXRpb24iLCJBdXRob3JpdGllcyI6WyJBRE1JTiJdLCJleHAiOjE2NzkwOTIwMDUsImlhdCI6MTY3OTAwNTYwNX0.QEu9I9nIa-6dvCJ2D97pZ0hlnQriz-y0DB6tK2Pp84MaEJCySjn48CDeppW6f_PYKESss9tbg0S3WY012RnIsw
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 208
+1 > Host: tek-insurance-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 > Accept-Encoding: gzip,deflate
+{"email":"VincenzoPadberg@tekschool.us","firstName":"Ayesha","lastName":"Langworth","title":"MS.","gender":"FEMALE","maritalStatus":"SINGLE","employmentStatus":"Planner","dateOfBirth":"1978-09-09","new":true}
+
+18:26:45.474 [main] DEBUG com.intuit.karate - response time in milliseconds: 412
+1 < 201
+1 < Content-Type: application/json
+1 < Date: Thu, 16 Mar 2023 22:26:45 GMT
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=296A7C1C3AF32975EF44F5C1C17804EA; Path=/; Secure; HttpOnly
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+{"id":6097,"email":"VincenzoPadberg@tekschool.us","title":"MS.","firstName":"Ayesha","lastName":"Langworth","gender":"FEMALE","maritalStatus":"SINGLE","employmentStatus":"Planner","dateOfBirth":274147200000,"user":null}
+
+18:26:45.475 [main] INFO  com.intuit.karate - [print] {
+  "id": 6097,
+  "email": "VincenzoPadberg@tekschool.us",
+  "title": "MS.",
+  "firstName": "Ayesha",
+  "lastName": "Langworth",
+  "gender": "FEMALE",
+  "maritalStatus": "SINGLE",
+  "employmentStatus": "Planner",
+  "dateOfBirth": 274147200000,
+  "user": null
+}
+ 
+18:26:45.492 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-insurance-api.azurewebsites.net/api/accounts/add-account-phone?primaryPersonId=6097
+1 > Authorization: Bearer eyJraWQiOiJUZWtzY2hvb2wgSW5zdXJhbmNlIEFwcGxpY2F0aW9uIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJhdWQiOiJVc2VyIG1hbmFnZW1lbnQgcG9ydGFsIiwic3ViIjoiU1VQRVJWSVNPUiIsImlzcyI6IlRlayBJbnN1cmFuY2UgQXBwbGljYXRpb24iLCJBdXRob3JpdGllcyI6WyJBRE1JTiJdLCJleHAiOjE2NzkwOTIwMDUsImlhdCI6MTY3OTAwNTYwNX0.QEu9I9nIa-6dvCJ2D97pZ0hlnQriz-y0DB6tK2Pp84MaEJCySjn48CDeppW6f_PYKESss9tbg0S3WY012RnIsw
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 100
+1 > Host: tek-insurance-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 > Accept-Encoding: gzip,deflate
+{"phoneNumber":"865-928-9483","phoneExtension":"6531","phoneTime":"Morning","phoneType":"CELLPHONE"}
+
+18:26:46.033 [main] DEBUG com.intuit.karate - response time in milliseconds: 540
+1 < 201
+1 < Content-Type: application/json
+1 < Date: Thu, 16 Mar 2023 22:26:45 GMT
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=B9879D74E3D28B6330F9845DD3C67553; Path=/; Secure; HttpOnly
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+{"id":1962,"phoneNumber":"865-928-9483","phoneExtension":"6531","phoneTime":"Morning","phoneType":"CELLPHONE"}
+
+18:26:46.035 [main] INFO  com.intuit.karate - [print] {
+  "id": 1962,
+  "phoneNumber": "865-928-9483",
+  "phoneExtension": "6531",
+  "phoneTime": "Morning",
+  "phoneType": "CELLPHONE"
+}
+ 
+18:26:46.042 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:26:46.049 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-insurance-api.azurewebsites.net/api/token
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 53
+1 > Host: tek-insurance-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 > Accept-Encoding: gzip,deflate
+{"username":"supervisor","password":"tek_supervisor"}
+
+18:26:46.511 [main] DEBUG com.intuit.karate - response time in milliseconds: 461
+1 < 200
+1 < Content-Type: application/json
+1 < Date: Thu, 16 Mar 2023 22:26:47 GMT
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+{"fullName":"Supervisor","username":"SUPERVISOR","token":"eyJraWQiOiJUZWtzY2hvb2wgSW5zdXJhbmNlIEFwcGxpY2F0aW9uIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJhdWQiOiJVc2VyIG1hbmFnZW1lbnQgcG9ydGFsIiwic3ViIjoiU1VQRVJWSVNPUiIsImlzcyI6IlRlayBJbnN1cmFuY2UgQXBwbGljYXRpb24iLCJBdXRob3JpdGllcyI6WyJBRE1JTiJdLCJleHAiOjE2NzkwOTIwMDcsImlhdCI6MTY3OTAwNTYwN30.x9wTBDo28tkd8myL0bEAAXvJlE9Xjh9rSIDdY0xt-7ZTGeL6NmwoTfLB-NcyapsnYnvb9NkoWfo5mZTZwnKDEw","generateDate":1679005607036,"accountType":"CSR"}
+
+18:26:46.512 [main] INFO  com.intuit.karate - [print] eyJraWQiOiJUZWtzY2hvb2wgSW5zdXJhbmNlIEFwcGxpY2F0aW9uIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJhdWQiOiJVc2VyIG1hbmFnZW1lbnQgcG9ydGFsIiwic3ViIjoiU1VQRVJWSVNPUiIsImlzcyI6IlRlayBJbnN1cmFuY2UgQXBwbGljYXRpb24iLCJBdXRob3JpdGllcyI6WyJBRE1JTiJdLCJleHAiOjE2NzkwOTIwMDcsImlhdCI6MTY3OTAwNTYwN30.x9wTBDo28tkd8myL0bEAAXvJlE9Xjh9rSIDdY0xt-7ZTGeL6NmwoTfLB-NcyapsnYnvb9NkoWfo5mZTZwnKDEw 
+18:26:46.512 [main] INFO  com.intuit.karate - [print] Supervisor 
+18:26:46.521 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-insurance-api.azurewebsites.net/api/token
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 53
+1 > Host: tek-insurance-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 > Accept-Encoding: gzip,deflate
+{"username":"supervisor","password":"tek_supervisor"}
+
+18:26:46.958 [main] DEBUG com.intuit.karate - response time in milliseconds: 437
+1 < 200
+1 < Content-Type: application/json
+1 < Date: Thu, 16 Mar 2023 22:26:47 GMT
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+{"fullName":"Supervisor","username":"SUPERVISOR","token":"eyJraWQiOiJUZWtzY2hvb2wgSW5zdXJhbmNlIEFwcGxpY2F0aW9uIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJhdWQiOiJVc2VyIG1hbmFnZW1lbnQgcG9ydGFsIiwic3ViIjoiU1VQRVJWSVNPUiIsImlzcyI6IlRlayBJbnN1cmFuY2UgQXBwbGljYXRpb24iLCJBdXRob3JpdGllcyI6WyJBRE1JTiJdLCJleHAiOjE2NzkwOTIwMDcsImlhdCI6MTY3OTAwNTYwN30.x9wTBDo28tkd8myL0bEAAXvJlE9Xjh9rSIDdY0xt-7ZTGeL6NmwoTfLB-NcyapsnYnvb9NkoWfo5mZTZwnKDEw","generateDate":1679005607485,"accountType":"CSR"}
+
+18:26:46.959 [main] INFO  com.intuit.karate - [print] eyJraWQiOiJUZWtzY2hvb2wgSW5zdXJhbmNlIEFwcGxpY2F0aW9uIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJhdWQiOiJVc2VyIG1hbmFnZW1lbnQgcG9ydGFsIiwic3ViIjoiU1VQRVJWSVNPUiIsImlzcyI6IlRlayBJbnN1cmFuY2UgQXBwbGljYXRpb24iLCJBdXRob3JpdGllcyI6WyJBRE1JTiJdLCJleHAiOjE2NzkwOTIwMDcsImlhdCI6MTY3OTAwNTYwN30.x9wTBDo28tkd8myL0bEAAXvJlE9Xjh9rSIDdY0xt-7ZTGeL6NmwoTfLB-NcyapsnYnvb9NkoWfo5mZTZwnKDEw 
+18:26:46.959 [main] INFO  com.intuit.karate - [print] Supervisor 
+18:26:46.965 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-insurance-api.azurewebsites.net/api/accounts/add-primary-account
+1 > Authorization: Bearer eyJraWQiOiJUZWtzY2hvb2wgSW5zdXJhbmNlIEFwcGxpY2F0aW9uIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJhdWQiOiJVc2VyIG1hbmFnZW1lbnQgcG9ydGFsIiwic3ViIjoiU1VQRVJWSVNPUiIsImlzcyI6IlRlayBJbnN1cmFuY2UgQXBwbGljYXRpb24iLCJBdXRob3JpdGllcyI6WyJBRE1JTiJdLCJleHAiOjE2NzkwOTIwMDcsImlhdCI6MTY3OTAwNTYwN30.x9wTBDo28tkd8myL0bEAAXvJlE9Xjh9rSIDdY0xt-7ZTGeL6NmwoTfLB-NcyapsnYnvb9NkoWfo5mZTZwnKDEw
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 209
+1 > Host: tek-insurance-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 > Accept-Encoding: gzip,deflate
+{"email":"TracyKeeling@tekschool.us","firstName":"Lionel","lastName":"Krajcik","title":"MISS","gender":"FEMALE","maritalStatus":"WIDOWER","employmentStatus":"Facilitator","dateOfBirth":"1999-05-03","new":true}
+
+18:26:47.366 [main] DEBUG com.intuit.karate - response time in milliseconds: 400
+1 < 201
+1 < Content-Type: application/json
+1 < Date: Thu, 16 Mar 2023 22:26:47 GMT
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=B928664E1934EEFB94A9AB59184324EF; Path=/; Secure; HttpOnly
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+{"id":6098,"email":"TracyKeeling@tekschool.us","title":"MISS","firstName":"Lionel","lastName":"Krajcik","gender":"FEMALE","maritalStatus":"WIDOWER","employmentStatus":"Facilitator","dateOfBirth":925689600000,"user":null}
+
+18:26:47.367 [main] INFO  com.intuit.karate - [print] {
+  "id": 6098,
+  "email": "TracyKeeling@tekschool.us",
+  "title": "MISS",
+  "firstName": "Lionel",
+  "lastName": "Krajcik",
+  "gender": "FEMALE",
+  "maritalStatus": "WIDOWER",
+  "employmentStatus": "Facilitator",
+  "dateOfBirth": 925689600000,
+  "user": null
+}
+ 
+18:26:47.371 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://tek-insurance-api.azurewebsites.net/api/accounts/update-account-phone?primaryPersonId=6098
+1 > Authorization: Bearer eyJraWQiOiJUZWtzY2hvb2wgSW5zdXJhbmNlIEFwcGxpY2F0aW9uIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJhdWQiOiJVc2VyIG1hbmFnZW1lbnQgcG9ydGFsIiwic3ViIjoiU1VQRVJWSVNPUiIsImlzcyI6IlRlayBJbnN1cmFuY2UgQXBwbGljYXRpb24iLCJBdXRob3JpdGllcyI6WyJBRE1JTiJdLCJleHAiOjE2NzkwOTIwMDcsImlhdCI6MTY3OTAwNTYwN30.x9wTBDo28tkd8myL0bEAAXvJlE9Xjh9rSIDdY0xt-7ZTGeL6NmwoTfLB-NcyapsnYnvb9NkoWfo5mZTZwnKDEw
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 100
+1 > Host: tek-insurance-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 > Accept-Encoding: gzip,deflate
+{"phoneNumber":"302-401-2344","phoneExtension":"6836","phoneTime":"Morning","phoneType":"CELLPHONE"}
+
+18:26:47.886 [main] DEBUG com.intuit.karate - response time in milliseconds: 514
+1 < 200
+1 < Content-Type: application/json
+1 < Date: Thu, 16 Mar 2023 22:26:48 GMT
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=D0F64BF808618C44FFD6B63C61F62D24; Path=/; Secure; HttpOnly
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+{"id":1963,"phoneNumber":"302-401-2344","phoneExtension":"6836","phoneTime":"Morning","phoneType":"CELLPHONE"}
+
+18:26:47.887 [main] INFO  com.intuit.karate - [print] {
+  "id": 1963,
+  "phoneNumber": "302-401-2344",
+  "phoneExtension": "6836",
+  "phoneTime": "Morning",
+  "phoneType": "CELLPHONE"
+}
+ 
+18:26:48.404 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:26:48.410 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-insurance-api.azurewebsites.net/api/token
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 53
+1 > Host: tek-insurance-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 > Accept-Encoding: gzip,deflate
+{"username":"supervisor","password":"tek_supervisor"}
+
+18:26:48.853 [main] DEBUG com.intuit.karate - response time in milliseconds: 442
+1 < 200
+1 < Content-Type: application/json
+1 < Date: Thu, 16 Mar 2023 22:26:48 GMT
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+{"fullName":"Supervisor","username":"SUPERVISOR","token":"eyJraWQiOiJUZWtzY2hvb2wgSW5zdXJhbmNlIEFwcGxpY2F0aW9uIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJhdWQiOiJVc2VyIG1hbmFnZW1lbnQgcG9ydGFsIiwic3ViIjoiU1VQRVJWSVNPUiIsImlzcyI6IlRlayBJbnN1cmFuY2UgQXBwbGljYXRpb24iLCJBdXRob3JpdGllcyI6WyJBRE1JTiJdLCJleHAiOjE2NzkwOTIwMDksImlhdCI6MTY3OTAwNTYwOX0.8kqNyIsJdAtbGBcuqnl9cnZpdaaPN_fjl22ZVsDD196nKafmKqTuS0aSLUU2cwoLE4y9Y0ISm6tRtrqCnYaMHw","generateDate":1679005609387,"accountType":"CSR"}
+
+18:26:48.855 [main] INFO  com.intuit.karate - [print] eyJraWQiOiJUZWtzY2hvb2wgSW5zdXJhbmNlIEFwcGxpY2F0aW9uIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJhdWQiOiJVc2VyIG1hbmFnZW1lbnQgcG9ydGFsIiwic3ViIjoiU1VQRVJWSVNPUiIsImlzcyI6IlRlayBJbnN1cmFuY2UgQXBwbGljYXRpb24iLCJBdXRob3JpdGllcyI6WyJBRE1JTiJdLCJleHAiOjE2NzkwOTIwMDksImlhdCI6MTY3OTAwNTYwOX0.8kqNyIsJdAtbGBcuqnl9cnZpdaaPN_fjl22ZVsDD196nKafmKqTuS0aSLUU2cwoLE4y9Y0ISm6tRtrqCnYaMHw 
+18:26:48.856 [main] INFO  com.intuit.karate - [print] Supervisor 
+18:26:48.913 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:26:48.930 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-insurance-api.azurewebsites.net/api/token
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 53
+1 > Host: tek-insurance-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 > Accept-Encoding: gzip,deflate
+{"username":"supervisor","password":"tek_supervisor"}
+
+18:26:49.360 [main] DEBUG com.intuit.karate - response time in milliseconds: 430
+1 < 200
+1 < Content-Type: application/json
+1 < Date: Thu, 16 Mar 2023 22:26:49 GMT
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+{"fullName":"Supervisor","username":"SUPERVISOR","token":"eyJraWQiOiJUZWtzY2hvb2wgSW5zdXJhbmNlIEFwcGxpY2F0aW9uIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJhdWQiOiJVc2VyIG1hbmFnZW1lbnQgcG9ydGFsIiwic3ViIjoiU1VQRVJWSVNPUiIsImlzcyI6IlRlayBJbnN1cmFuY2UgQXBwbGljYXRpb24iLCJBdXRob3JpdGllcyI6WyJBRE1JTiJdLCJleHAiOjE2NzkwOTIwMDksImlhdCI6MTY3OTAwNTYwOX0.8kqNyIsJdAtbGBcuqnl9cnZpdaaPN_fjl22ZVsDD196nKafmKqTuS0aSLUU2cwoLE4y9Y0ISm6tRtrqCnYaMHw","generateDate":1679005609891,"accountType":"CSR"}
+
+18:26:49.361 [main] INFO  com.intuit.karate - [print] eyJraWQiOiJUZWtzY2hvb2wgSW5zdXJhbmNlIEFwcGxpY2F0aW9uIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJhdWQiOiJVc2VyIG1hbmFnZW1lbnQgcG9ydGFsIiwic3ViIjoiU1VQRVJWSVNPUiIsImlzcyI6IlRlayBJbnN1cmFuY2UgQXBwbGljYXRpb24iLCJBdXRob3JpdGllcyI6WyJBRE1JTiJdLCJleHAiOjE2NzkwOTIwMDksImlhdCI6MTY3OTAwNTYwOX0.8kqNyIsJdAtbGBcuqnl9cnZpdaaPN_fjl22ZVsDD196nKafmKqTuS0aSLUU2cwoLE4y9Y0ISm6tRtrqCnYaMHw 
+18:26:49.361 [main] INFO  com.intuit.karate - [print] Supervisor 
+18:26:49.370 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-insurance-api.azurewebsites.net/api/accounts/add-primary-account
+1 > Authorization: Bearer eyJraWQiOiJUZWtzY2hvb2wgSW5zdXJhbmNlIEFwcGxpY2F0aW9uIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJhdWQiOiJVc2VyIG1hbmFnZW1lbnQgcG9ydGFsIiwic3ViIjoiU1VQRVJWSVNPUiIsImlzcyI6IlRlayBJbnN1cmFuY2UgQXBwbGljYXRpb24iLCJBdXRob3JpdGllcyI6WyJBRE1JTiJdLCJleHAiOjE2NzkwOTIwMDksImlhdCI6MTY3OTAwNTYwOX0.8kqNyIsJdAtbGBcuqnl9cnZpdaaPN_fjl22ZVsDD196nKafmKqTuS0aSLUU2cwoLE4y9Y0ISm6tRtrqCnYaMHw
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 208
+1 > Host: tek-insurance-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 > Accept-Encoding: gzip,deflate
+{"email":"CaryUllrich@tekschool.us","firstName":"Millie","lastName":"Prosacco","title":"MISS","gender":"FEMALE","maritalStatus":"MARRIED","employmentStatus":"Strategist","dateOfBirth":"1960-10-14","new":true}
+
+18:26:49.779 [main] DEBUG com.intuit.karate - response time in milliseconds: 408
+1 < 201
+1 < Content-Type: application/json
+1 < Date: Thu, 16 Mar 2023 22:26:49 GMT
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=5AAE58B2BADCDDEDC63FAF4E94FE94FA; Path=/; Secure; HttpOnly
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+{"id":6099,"email":"CaryUllrich@tekschool.us","title":"MISS","firstName":"Millie","lastName":"Prosacco","gender":"FEMALE","maritalStatus":"MARRIED","employmentStatus":"Strategist","dateOfBirth":-290822400000,"user":null}
+
+18:26:49.780 [main] INFO  com.intuit.karate - [print] {
+  "id": 6099,
+  "email": "CaryUllrich@tekschool.us",
+  "title": "MISS",
+  "firstName": "Millie",
+  "lastName": "Prosacco",
+  "gender": "FEMALE",
+  "maritalStatus": "MARRIED",
+  "employmentStatus": "Strategist",
+  "dateOfBirth": -290822400000,
+  "user": null
+}
+ 
+18:26:49.909 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:26:49.920 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-insurance-api.azurewebsites.net/api/token
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 53
+1 > Host: tek-insurance-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 > Accept-Encoding: gzip,deflate
+{"username":"supervisor","password":"tek_supervisor"}
+
+18:26:50.367 [main] DEBUG com.intuit.karate - response time in milliseconds: 447
+1 < 200
+1 < Content-Type: application/json
+1 < Date: Thu, 16 Mar 2023 22:26:50 GMT
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+{"fullName":"Supervisor","username":"SUPERVISOR","token":"eyJraWQiOiJUZWtzY2hvb2wgSW5zdXJhbmNlIEFwcGxpY2F0aW9uIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJhdWQiOiJVc2VyIG1hbmFnZW1lbnQgcG9ydGFsIiwic3ViIjoiU1VQRVJWSVNPUiIsImlzcyI6IlRlayBJbnN1cmFuY2UgQXBwbGljYXRpb24iLCJBdXRob3JpdGllcyI6WyJBRE1JTiJdLCJleHAiOjE2NzkwOTIwMTAsImlhdCI6MTY3OTAwNTYxMH0.2nMzMCQjS6PLl7LbGVNaRtuof4twgu3KIslmR53Rblrc2LspvonAjdbe6GdhXof8xPhgcbIuva9b2qAdbmtqDw","generateDate":1679005610900,"accountType":"CSR"}
+
+18:26:50.368 [main] INFO  com.intuit.karate - [print] eyJraWQiOiJUZWtzY2hvb2wgSW5zdXJhbmNlIEFwcGxpY2F0aW9uIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJhdWQiOiJVc2VyIG1hbmFnZW1lbnQgcG9ydGFsIiwic3ViIjoiU1VQRVJWSVNPUiIsImlzcyI6IlRlayBJbnN1cmFuY2UgQXBwbGljYXRpb24iLCJBdXRob3JpdGllcyI6WyJBRE1JTiJdLCJleHAiOjE2NzkwOTIwMTAsImlhdCI6MTY3OTAwNTYxMH0.2nMzMCQjS6PLl7LbGVNaRtuof4twgu3KIslmR53Rblrc2LspvonAjdbe6GdhXof8xPhgcbIuva9b2qAdbmtqDw 
+18:26:50.369 [main] INFO  com.intuit.karate - [print] Supervisor 
+18:26:50.371 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-insurance-api.azurewebsites.net/api/accounts/get-primary-account?primaryPersonId=32
+1 > Authorization: Bearer eyJraWQiOiJUZWtzY2hvb2wgSW5zdXJhbmNlIEFwcGxpY2F0aW9uIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJhdWQiOiJVc2VyIG1hbmFnZW1lbnQgcG9ydGFsIiwic3ViIjoiU1VQRVJWSVNPUiIsImlzcyI6IlRlayBJbnN1cmFuY2UgQXBwbGljYXRpb24iLCJBdXRob3JpdGllcyI6WyJBRE1JTiJdLCJleHAiOjE2NzkwOTIwMTAsImlhdCI6MTY3OTAwNTYxMH0.2nMzMCQjS6PLl7LbGVNaRtuof4twgu3KIslmR53Rblrc2LspvonAjdbe6GdhXof8xPhgcbIuva9b2qAdbmtqDw
+1 > Host: tek-insurance-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 > Accept-Encoding: gzip,deflate
+
+
+18:26:50.773 [main] DEBUG com.intuit.karate - response time in milliseconds: 402
+1 < 200
+1 < Content-Type: application/json
+1 < Date: Thu, 16 Mar 2023 22:26:50 GMT
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=AA3251CDA0125061E0F2CA2D73CDF3C8; Path=/; Secure; HttpOnly
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+{"id":32,"email":"Hewad01.habib@gmail.com","title":"Mr.","firstName":"Habib ","lastName":"Ilham","gender":"MALE","maritalStatus":"SINGLE","employmentStatus":"STUDENT","dateOfBirth":791942400000,"user":null}
+
+18:26:50.774 [main] INFO  com.intuit.karate - [print] {
+  "id": 32,
+  "email": "Hewad01.habib@gmail.com",
+  "title": "Mr.",
+  "firstName": "Habib ",
+  "lastName": "Ilham",
+  "gender": "MALE",
+  "maritalStatus": "SINGLE",
+  "employmentStatus": "STUDENT",
+  "dateOfBirth": 791942400000,
+  "user": null
+}
+ 

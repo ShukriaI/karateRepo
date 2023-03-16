@@ -29,4 +29,4 @@ Feature: TEK Insurance API Schema Validation
     * match responseType == 'json'
     * match responseType != 'xml'
     * assert responseTime <2000
-    * match contains response.user 
+    
